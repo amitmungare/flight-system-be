@@ -1,0 +1,286 @@
+[
+  {
+    "airline": "Akasa Air",
+    "airlineCode": "QP",
+    "flightNumber": 101,
+    "origin": "BOM",
+    "availableSeats": 64,
+    "destination": "BLR",
+    "price": 4899,
+    "departure": "2025-06-01T07:15:00.000Z",
+    "arrival": "2025-06-01T09:05:00.000Z",
+    "duration": "1h 50m",
+    "operationalDays": [1, 3, 5]
+  },
+  {
+    "airline": "IndiGo",
+    "airlineCode": "6E",
+    "flightNumber": 332,
+    "origin": "BLR",
+    "availableSeats": 42,
+    "destination": "BOM",
+    "price": 5190,
+    "departure": "2025-06-01T15:40:00.000Z",
+    "arrival": "2025-06-01T17:25:00.000Z",
+    "duration": "1h 45m",
+    "operationalDays": [0, 6]
+  },
+  {
+    "airline": "Vistara",
+    "airlineCode": "UK",
+    "flightNumber": 214,
+    "origin": "DEL",
+    "availableSeats": 18,
+    "destination": "HYD",
+    "price": 6625,
+    "departure": "2025-06-02T06:30:00.000Z",
+    "arrival": "2025-06-02T08:55:00.000Z",
+    "duration": "2h 25m",
+    "operationalDays": [2, 4]
+  },
+  {
+    "airline": "Air India Express",
+    "airlineCode": "IX",
+    "flightNumber": 775,
+    "origin": "MAA",
+    "availableSeats": 77,
+    "destination": "HYD",
+    "price": 4290,
+    "departure": "2025-06-03T13:10:00.000Z",
+    "arrival": "2025-06-03T14:40:00.000Z",
+    "duration": "1h 30m",
+    "operationalDays": [1, 3, 5]
+  },
+  {
+    "airline": "SpiceJet",
+    "airlineCode": "SG",
+    "flightNumber": 522,
+    "origin": "BLR",
+    "availableSeats": 33,
+    "destination": "GOI",
+    "price": 3780,
+    "departure": "2025-06-04T17:50:00.000Z",
+    "arrival": "2025-06-04T19:05:00.000Z",
+    "duration": "1h 15m",
+    "operationalDays": [0, 2, 4, 6]
+  },
+  {
+    "airline": "Alliance Air",
+    "airlineCode": "9I",
+    "flightNumber": 905,
+    "origin": "GOI",
+    "availableSeats": 24,
+    "destination": "BLR",
+    "price": 3580,
+    "departure": "2025-06-05T10:25:00.000Z",
+    "arrival": "2025-06-05T11:35:00.000Z",
+    "duration": "1h 10m",
+    "operationalDays": [2, 5]
+  },
+  {
+    "airline": "Star Air",
+    "airlineCode": "OG",
+    "flightNumber": 115,
+    "origin": "PNQ",
+    "availableSeats": 12,
+    "destination": "BLR",
+    "price": 4720,
+    "departure": "2025-06-06T08:00:00.000Z",
+    "arrival": "2025-06-06T09:35:00.000Z",
+    "duration": "1h 35m",
+    "operationalDays": [1, 2, 3, 4]
+  },
+  {
+    "airline": "Go First",
+    "airlineCode": "G8",
+    "flightNumber": 336,
+    "origin": "BLR",
+    "availableSeats": 48,
+    "destination": "PNQ",
+    "price": 5050,
+    "departure": "2025-06-06T18:45:00.000Z",
+    "arrival": "2025-06-06T20:30:00.000Z",
+    "duration": "1h 45m",
+    "operationalDays": [0, 6]
+  },
+  {
+    "airline": "Vistara",
+    "airlineCode": "UK",
+    "flightNumber": 121,
+    "origin": "DEL",
+    "availableSeats": 93,
+    "destination": "BOM",
+    "price": 5990,
+    "departure": "2025-06-07T12:30:00.000Z",
+    "arrival": "2025-06-07T14:55:00.000Z",
+    "duration": "2h 25m",
+    "operationalDays": [1, 3, 5]
+  },
+  {
+    "airline": "IndiGo",
+    "airlineCode": "6E",
+    "flightNumber": 444,
+    "origin": "HYD",
+    "availableSeats": 29,
+    "destination": "DEL",
+    "price": 6555,
+    "departure": "2025-06-08T14:10:00.000Z",
+    "arrival": "2025-06-08T16:45:00.000Z",
+    "duration": "2h 35m",
+    "operationalDays": [2, 4, 6]
+  },
+  {
+    "airline": "Jet Airways",
+    "airlineCode": "9W",
+    "flightNumber": 186,
+    "origin": "DEL",
+    "availableSeats": 116,
+    "destination": "PNQ",
+    "price": 6733,
+    "departure": "2013-01-01T10:59:00.000Z",
+    "arrival": "2013-01-01T13:32:00.000Z",
+    "duration": "2h 33m",
+    "operationalDays": [
+      0,
+      2
+    ]
+  },
+  {
+    "airline": "Jet Airways",
+    "airlineCode": "9W",
+    "flightNumber": 251,
+    "origin": "PNQ",
+    "availableSeats": 53,
+    "destination": "DEL",
+    "price": 8713,
+    "departure": "2013-01-01T08:17:00.000Z",
+    "arrival": "2013-01-01T10:54:00.000Z",
+    "duration": "2h 37m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Indigo",
+    "airlineCode": "6E",
+    "flightNumber": 224,
+    "origin": "PNQ",
+    "availableSeats": 87,
+    "destination": "DEL",
+    "price": 5996,
+    "departure": "2013-01-01T03:09:00.000Z",
+    "arrival": "2013-01-01T05:25:00.000Z",
+    "duration": "2h 16m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Air India",
+    "airlineCode": "AI",
+    "flightNumber": 192,
+    "origin": "PNQ",
+    "availableSeats": 28,
+    "destination": "DEL",
+    "price": 3652,
+    "departure": "2013-01-01T09:30:00.000Z",
+    "arrival": "2013-01-01T11:31:00.000Z",
+    "duration": "2h 1m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Spice Jet",
+    "airlineCode": "SG",
+    "flightNumber": 241,
+    "origin": "PNQ",
+    "availableSeats": 29,
+    "destination": "DEL",
+    "price": 7413,
+    "departure": "2013-01-01T13:55:00.000Z",
+    "arrival": "2013-01-01T15:43:00.000Z",
+    "duration": "1h 48m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Indigo",
+    "airlineCode": "6E",
+    "flightNumber": 240,
+    "origin": "PNQ",
+    "availableSeats": 10,
+    "destination": "DEL",
+    "price": 4843,
+    "departure": "2013-01-01T05:47:00.000Z",
+    "arrival": "2013-01-01T07:35:00.000Z",
+    "duration": "1h 48m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Air India",
+    "airlineCode": "AI",
+    "flightNumber": 167,
+    "origin": "PNQ",
+    "availableSeats": 126,
+    "destination": "DEL",
+    "price": 2930,
+    "departure": "2013-01-01T12:10:00.000Z",
+    "arrival": "2013-01-01T14:00:00.000Z",
+    "duration": "1h 50m",
+    "operationalDays": [
+      1,
+      2
+    ]
+  },
+  {
+    "airline": "Spice Jet",
+    "airlineCode": "SG",
+    "flightNumber": 254,
+    "origin": "PNQ",
+    "availableSeats": 33,
+    "destination": "DEL",
+    "price": 4191,
+    "departure": "2013-01-01T10:01:00.000Z",
+    "arrival": "2013-01-01T12:35:00.000Z",
+    "duration": "2h 34m",
+    "operationalDays": [
+      7
+    ]
+  },
+  {
+    "airline": "Jet Airways",
+    "airlineCode": "9W",
+    "flightNumber": 144,
+    "origin": "PNQ",
+    "availableSeats": 45,
+    "destination": "DEL",
+    "price": 5788,
+    "departure": "2013-01-01T06:09:00.000Z",
+    "arrival": "2013-01-01T09:06:00.000Z",
+    "duration": "2h 57m",
+    "operationalDays": [
+      3,
+      4
+    ]
+  },
+  {
+    "airline": "Air India",
+    "airlineCode": "AI",
+    "flightNumber": 193,
+    "origin": "PNQ",
+    "availableSeats": 71,
+    "destination": "DEL",
+    "price": 7460,
+    "departure": "2013-01-01T11:03:00.000Z",
+    "arrival": "2013-01-01T12:57:00.000Z",
+    "duration": "1h 54m",
+    "operationalDays": [
+      6,
+      5
+    ]
+  }
+]
