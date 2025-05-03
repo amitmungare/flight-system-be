@@ -1,6 +1,4 @@
-// controllers/v1/flightController.js
-
-import Flight from '../../server/models/Flight.js';
+import Flight from "../models/Flight";
 
 export const searchFlights = async (req, res) => {
   try {
