@@ -1,4 +1,5 @@
-import Flight from "../models/Flight";
+import Flight from "../models/Flight.js";
+
 
 export const searchFlights = async (req, res) => {
   try {
