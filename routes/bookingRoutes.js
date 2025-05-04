@@ -1,11 +1,13 @@
 import express from 'express';
-import { createBooking, getUserBookings } from '../controllers/bookingController.js';
+import { createBooking, deleteBooking, getBooking, getUserBookings, updateBooking } from '../controllers/bookingController.js';
 import { authenticateJWT } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-// POST /api/v1/bookings
 router.post('/', authenticateJWT, createBooking);
-router.get('/my-bookings', authenticateJWT, getUserBookings);
+router.get('/', authenticateJWT, getUserBookings);
+router.get('/:id', authenticateJWT, getBooking);
+router.put('/:id', authenticateJWT, updateBooking);
+router.delete('/:id', authenticateJWT, deleteBooking);
 
 export default router;
