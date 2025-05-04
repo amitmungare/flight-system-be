@@ -4,7 +4,7 @@ const passengerSchema = new mongoose.Schema({
   name: String,
   age: Number,
   gender: String,
-  seat: String,
+  seat: Number,
 });
 
 const bookingSchema = new mongoose.Schema({
