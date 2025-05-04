@@ -12,13 +12,13 @@ const importData = async () => {
 
     await mongoose.connect(process.env.MONGO_URI);
 
-    await Flight.deleteMany(); // Optional: clear existing
+    await Flight.deleteMany();
     await Flight.insertMany(flights);
 
-    console.log('✅ Flights imported from JSON');
+    console.log('Flights imported from JSON');
     process.exit();
   } catch (error) {
-    console.error('❌ Error importing JSON:', error);
+    console.error('Error importing JSON:', error);
     process.exit(1);
   }
 };

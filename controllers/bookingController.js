@@ -26,7 +26,7 @@ export const createBooking = async (req, res) => {
       return res.status(400).json({ message: 'Passenger details are missing or invalid' });
     }
 
-    // 🔒 Check for seat availability
+    // Check for seat availability
     const isSeatTaken = seats.some(seat => flight.bookedSeats.includes(seat));
     if (isSeatTaken) {
       return res.status(400).json({ message: 'One or more selected seats are already booked.' });
@@ -36,12 +36,12 @@ export const createBooking = async (req, res) => {
       return res.status(400).json({ message: 'Not enough seats available.' });
     }
 
-    // ✅ Update flight seat info
+    // Update flight seat info
     flight.availableSeats -= seats.length;
     flight.bookedSeats.push(...seats);
     await flight.save();
 
-    // 📝 Create booking
+    // Create booking
     const booking = await Booking.create({
       user: req.user._id,
       flight: flightId,

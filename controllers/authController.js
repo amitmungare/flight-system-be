@@ -1,4 +1,3 @@
-// controllers/authController.js
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User.js';
 import { BlacklistedToken } from '../models/BlacklistedToken.js';
