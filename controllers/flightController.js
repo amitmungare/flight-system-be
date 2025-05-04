@@ -20,6 +20,11 @@ export const searchFlights = async (req, res) => {
       return res.status(400).json({ message: 'Number of passengers must be a valid positive integer.' });
     }
 
+    const date = new Date(departureDate);
+    if (isNaN(date.getTime())) {
+      return res.status(400).json({ message: 'Invalid departure date format.' });
+    }
+
     const startOfDay = new Date(departureDate);
     startOfDay.setUTCHours(0, 0, 0, 0);
     
@@ -35,7 +40,7 @@ export const searchFlights = async (req, res) => {
     });
 
     if (!flights || flights.length === 0) {
-      return res.status(404).json({ message: 'No available flights found for the given criteria.' });
+      return res.status(404).json({ message: 'No available flights.' });
     }
 
     return res.status(200).json(flights);

@@ -1,6 +1,7 @@
 // controllers/authController.js
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User.js';
+import { BlacklistedToken } from '../models/BlacklistedToken.js';
 
 const generateToken = (userId) => {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
@@ -58,7 +59,19 @@ export const loginUser = async (req, res) => {
   });
 };
 
-export const logoutUser = (req, res) => {
-  // On frontend: clear token from localStorage/cookie
-  res.status(200).json({ message: 'Logout successful' });
+export const logoutUser = async (req, res) => {
+  const token = req.headers.authorization?.split(' ')[1];
+  if (!token) return res.status(400).json({ message: 'No token provided' });
+  const isBlacklisted = await BlacklistedToken.findOne({ token });
+  if (isBlacklisted) {
+    return res.status(401).json({ message: 'Invalid or expired token. Please login again.' });
+  }
+
+  const decoded = jwt.decode(token);
+  const expiresAt = new Date(decoded.exp * 1000);
+
+  await BlacklistedToken.create({ token, expiresAt });
+
+  res.status(200).json({ message: 'Logout successful.' });
 };
+

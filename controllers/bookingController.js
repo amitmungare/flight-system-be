@@ -11,9 +11,6 @@ export const createBooking = async (req, res) => {
 
   const seats = passengers.map(p => p.seat);
 
-  console.log("seats",seats)
-  console.log("passengers",passengers)
-
   if (passengers.length === 0 || seats.some(seat => !seat)) {
     return res.status(400).json({ message: 'No seat selected or seat missing for one or more passengers.' });
   }
@@ -96,7 +93,7 @@ export const updateBooking = async (req, res) => {
   if (!Array.isArray(passengers)) {
     return res.status(400).json({ message: 'Invalid data format' });
   }
-  
+
   const seats = passengers.map(p => p.seat);
 
   if (passengers.length === 0 || seats.some(seat => !seat)) {
